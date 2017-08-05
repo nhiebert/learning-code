@@ -1,34 +1,38 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US"> <!-- the root element is <html> -->
 
+<style>
+
+</style>
 <head> <!-- <head> is not visible on the page. This is purely for metadata and CSS files -->
  <meta charset="utf-8">
- <title> My Website Test</title> <!--The 'title' shows up as the page link during a Google search --> 
+ <title> My Website Test</title> <!--The 'title' shows up as the page link during a Google search -->
  <link rel="stylesheet" href="style.css"> <!-- This is how you get CSS -->
  <meta name="author" content="Nick Hiebert">
  <meta name="description" content="This page is a venture into coding HTML as a beginner."> <!-- The 'description' shows up as subtext during a Google search-->
- <link rel="shortcut icon" href="loafer.jpg" width = "16" height= "16" type="image/x-icon"> <!--This creates the icon that is visible in the browser tab -->
+ <link rel="shortcut icon" href="warriors.png" width = "16" height= "16" type="image/x-icon"> <!--This creates the icon that is visible in the browser tab -->
+
 </head>
 
  <body>
- 
+
 
 
 <font color="#FEFEFE">
 <font face="verdana">
 
-<h1>  Nick Hiebert - Learning to Code  </h1> <!-- How to create a header -->
+<h1> Learning to Code  </h1> <!-- How to create a header -->
 <hr>
 
 <h2> About Me </h2>
 
 <p> <!--title means tooltip! -->
-As of August 2017, I am beginning to teach myself how to program <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>. Please join me on my journey! <a href = "link1.html">here </a> <!--<a> creates a hyperlink, href creates the link reference -->
+Hello, my name is Nick, and as of August 2017, I am beginning to teach myself how to program <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>. Please join me on my journey! <a href = "link1.html">here </a> <!--<a> creates a hyperlink, href creates the link reference -->
 </p>
 
-<ul> 
+<ul>
 	<li> I am 24 years old </li>
-	<li> I am married to Beth Hiebert </li> 
+	<li> I am married to Beth Hiebert </li>
 	<li> I live in <a href="https://www.google.com/maps/place/Victoria,+TX/@30.647362,-99.9087838,6.5z/data=!4m5!3m4!1s0x864266db2e2dac3b:0xeee20d566f63267d!8m2!3d28.8052674!4d-97.0035982">Victoria, TX</a></li>
 	<li> I teach Biology and coach Basketball at Victoria West High School - <strong> Go Warriors! </strong>
 </ul>
@@ -38,15 +42,23 @@ As of August 2017, I am beginning to teach myself how to program <a href="https:
 <hr>
 
 
-<h2> Warrior Up </h2>
+<h2> Do You Have What it Takes? </h2>
 
-<p title="Victoria West HS">
-<a href="http://vwhs.visd.net/apps/pages/index.jsp?uREC_ID=549619&type=d&pREC_ID=1054767"> 
-<img src="warriors.png" width="250" height="250"> <!--Here is how to show an image -->
+<!-- Warrior Photo -->
+<center>
+<a href="http://vwhs.visd.net/apps/pages/index.jsp?uREC_ID=549619&type=d&pREC_ID=1054767" title="Victoria West HS">
+<img src="warriors.png" alt= "Warrior Up!"  width="250" height="250" > <!--Here is how to show an image -->
 </a>
+</center>
 
-<p> What do you think of this picture? </p>
-<input type="text">
+ <p>What do you think of this picture? <i> You can either type your answer, or select an option below </i> </p>
+
+<label><input type="radio" name="its-great"> It's great!</label> <!--These elements create interacting buttons for input. I need to learn how to retrieve data -->
+<label><input type="radio" name="needs-work"> Needs work </label>
+<label><input type="radio" name="other-option"> Other</label>
+<input type="text" placeholder = "Enter other option here">
+<button type="submit"> Tell me what you think </button>  <!-- Creates a button that reads "Tell me what you think"!-->
+
 <hr>
 
 
@@ -61,15 +73,36 @@ As of August 2017, I am beginning to teach myself how to program <a href="https:
   <li>Grit</li>
 </ol>
 
+<hr>
+<h2> Upcoming School Year </h2>
+
+<p> 1.) Please select your grade level: </p> <!--This will gather information, but it needs to be retrievable -->
+<label><input type="radio" name="freshman"> Freshman </label>
+<label><input type="radio" name="sophomore"> Sophomore</label>
+<label><input type="radio" name="junior"> Junior</label>
+<label><input type="radio" name="senior"> Senior</label>
+
+<p> 2.) Please select the position that you are trying out for: </p>
+<label><input type="checkbox" name="pos-guard" > Guard</label>
+<label><input type="checkbox" name="pos-wing" > Wing</label>
+<label><input type="checkbox" name="pos-post" > Post</label>
+
+<p> 3.) Please tell us why you think that you might be Warrior basketball material </p>
+<input type="text" placeholder="Enter text here">
+<button type="button">Submit</button>
 
 
 </p>
 <hr>
+<div id="portal-footer">
+		<p>created by Nick Hiebert</p>
+</div>
+
 
 </font>
 </font>
 
-<!-- <script src="script.js"></script> <!-- This is how you implement Javascript files -->
+<!-- <script src="script.js"></script> <!- This is how you implement Javascript files -->
 
 </body>
 </html>
